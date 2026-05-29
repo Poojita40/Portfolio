@@ -1,0 +1,50 @@
+
+
+LAKKAKULA POOJITA
++91 6305910456 — poojitalakkakula09@gmail.com — linkedin.com/in/poojitalakkakula — github.com/Poojita40
+PROFESSIONAL SUMMARY
+B.Tech Computer Science and Engineering Data Science pursuing graduate skilled in building machine learning models
+for  classification  and  regression  problems.   Experienced  in  data  preprocessing,  exploratory  data  analysis,  and  model
+evaluation  using  Python.   Passionate  about  solving  real-world  business  problems  using  data-driven  approaches  and
+improving model performance through feature engineering.
+WORK EXPERIENCE
+Salesforce AI Agent Developer TraineeJuly 2025 – October 2025
+Smart Bridge (Skill Wallet – Last Mile Program)
+•Completed hands-on training in Salesforce ecosystem focusing on AI agent development, workflow automation, and
+business optimization.
+•Designed CRM solutions using real-world use cases, improving data management and user interaction efficiency.
+EDUCATION
+B.Tech Computer Science and Enginering -Data Science2023–2027
+Anurag University,Hyderabad — CGPA: 8.62
+Intermediate in MPC2021–2023
+Sri Chaitanya Junior College — 84.7%
+Board of Secondary Education2020–2021
+NTR Model School — 83%
+PROJECTS
+Healthcare Queue Management System
+•Developed REST APIs using Spring Boot improving response speed.
+•Built React dashboard for real-time queue tracking.
+•Integrated H2 database and tested APIs using Postman.
+Customer Churn Prediction System
+•Built ML models (Random Forest, XGBoost) for churn prediction.
+•Performed data cleaning, feature engineering, and SMOTE balancing.
+•Achieved 84% CV accuracy and 78% test accuracy.
+TECHNICAL SKILLS
+Languages:Python, R, Java
+Core:DSA, OOP, DBMS, OS
+ML:Classification, Regression, Feature Engineering, Model Evaluation
+Web:MERN Stack, REST APIs, HTML, CSS
+Tools:Git, Jupyter, VS Code, Tableau
+CERTIFICATIONS
+•Agentforce Specialist Certification -Salesforce
+•Machine Learning Certification -NPTEL
+•Data Analytics Essentials-Cisco
+•Java Fundamentals -Oracle
+•Data Analytics-Google Cloud
+•Python Essentials -Cisco
+INTERNSHIPS
+•Data Analytics Process Automation Internship — EduSkills
+•Android Developer Virtual Internship — EduSkills
+•Employability Skills Internship — EduSkills
+•ServiceNow Administration Fundamentals(Xanadu)-SmartBridge
+1

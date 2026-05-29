@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Portfolio of Lakkakula Poojita, a B.Tech Computer Science (Data Science) student specializing in AI, Machine Learning, Data Analytics, and Software Engineering.">
+  <meta name="keywords" content="Lakkakula Poojita, Data Science, Machine Learning, Portfolio, Salesforce AI, AI Developer, Anurag University, Software Engineering, Python, Spring Boot">
+  <meta name="author" content="Lakkakula Poojita">
+  
+  <!-- OpenGraph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Lakkakula Poojita | AI & Data Science Developer Portfolio">
+  <meta property="og:description" content="Explore my projects in machine learning, Salesforce AI Agent development, full stack engineering, and data analytics.">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:url" content="https://github.com/Poojita40">
+  <meta property="og:type" content="website">
+
+  <title>Lakkakula Poojita | AI & Data Science Developer</title>
+
+  <!-- External Stylesheets & Fonts -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Premium Icons (Tabler Icons fallback SVG) -->
+</head>
+<body>
+
+  <!-- FIXED PARTICLES BACKGROUND -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- FIXED AMBIENT COLOR ORBS -->
+  <div class="ambient-glows">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- HEADER / NAVIGATION BAR -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        L. Poojita<span class="logo-dot"></span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <!-- Dark/Light Theme Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+          <!-- Moon Icon (Dark Mode default) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode toggle) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <!-- Mobile Navigation Trigger -->
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-welcome">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Available for Internships & Placement Roles
+          </div>
+          
+          <h1 class="hero-name" id="hero-name-label">
+            Lakkakula<br><span>Poojita</span>
+          </h1>
+
+          <!-- ROTATING TEXT WRAPPER -->
+          <div class="hero-titles-container">
+            <div class="hero-title-list">
+              <div class="hero-title-item">AI & Data Science Enthusiast</div>
+              <div class="hero-title-item">Machine Learning Developer</div>
+              <div class="hero-title-item">Full Stack Learner</div>
+            </div>
+          </div>
+
+          <p class="hero-headline">
+            Transforming Data into Intelligent Solutions through AI, Machine Learning, Analytics, and Software Development.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              View Projects
+              <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <a href="poojita_resume.pdf" download class="btn btn-accent" id="btn-hero-download">
+              Download Resume
+              <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </a>
+            
+            <button class="btn btn-secondary open-resume-modal-btn" id="btn-hero-view-modal">
+              View Resume
+              <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+            
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- HERO IMAGE (FLOATING CARD WITH BADGES) -->
+        <div class="hero-image-wrapper floating float-slow">
+          <div class="hero-image-glow-ring"></div>
+          
+          <div class="hero-image-card">
+            <img src="profile.jpg" alt="Lakkakula Poojita" id="hero-profile-img" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'">
+          </div>
+
+          <!-- Anti-Gravity Badges -->
+          <div class="hero-floating-badge hero-badge-1 floating float-medium float-delayed-1">
+            <span style="color: var(--accent);">●</span> ML & AI Models
+          </div>
+          
+          <div class="hero-floating-badge hero-badge-2 floating float-fast float-delayed-2">
+            <span style="color: var(--accent-light);">✦</span> Data Analytics
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section reveal" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Professional Summary</h2>
+          <p class="section-desc">A glimpse into my core expertise and academic foundations.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left-visual floating float-slow">
+            <!-- Glassmorphism Stats Panel -->
+            <div class="glass-panel spotlight-card" style="padding: 3rem; display: flex; flex-direction: column; gap: 2rem;">
+              <h3 style="font-size: 1.8rem; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Lakkakula Poojita</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+                Currently pursuing a <strong>B.Tech in Computer Science and Engineering (Data Science)</strong>. I focus heavily on bridging academic foundations with actionable enterprise expertise. 
+              </p>
+              
+              <div style="border-top: 1px solid var(--border-color); padding-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                  <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent);">8.62</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Current B.Tech CGPA</div>
+                </div>
+                <div>
+                  <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-light);">10+</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Certifications & Virtuals</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right-info">
+            <p class="about-summary">
+              As a Computer Science and Engineering graduate specializing in <strong>Data Science</strong>, I am highly skilled in building machine learning models for classification and regression problems. 
+              <br><br>
+              I possess extensive experience in <strong>data preprocessing, exploratory data analysis (EDA), and rigorous model evaluation</strong> using Python. I am deeply passionate about solving real-world business challenges using data-driven methodologies and constantly boosting model performance through meticulous <strong>feature engineering</strong>.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="glass-panel spotlight-card about-highlight-card">
+                <div class="about-highlight-icon">
+                  <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3>AI & ML Development</h3>
+                <p>Building high-performing classification models, regression models, and data-driven prediction servers.</p>
+              </div>
+
+              <div class="glass-panel spotlight-card about-highlight-card">
+                <div class="about-highlight-icon">
+                  <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <h3>Data Analytics</h3>
+                <p>Handling large-scale data cleaning, features analysis, exploratory analytics, and Tableau dashboarding.</p>
+              </div>
+
+              <div class="glass-panel spotlight-card about-highlight-card">
+                <div class="about-highlight-icon">
+                  <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 22 22 22 12 2"></polygon>
+                  </svg>
+                </div>
+                <h3>Full Stack Engineering</h3>
+                <p>Capable of building robust REST APIs with Spring Boot and MERN stack frontend elements.</p>
+              </div>
+
+              <div class="glass-panel spotlight-card about-highlight-card">
+                <div class="about-highlight-icon">
+                  <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  </svg>
+                </div>
+                <h3>Salesforce Ecosystem</h3>
+                <p>Hands-on training in Salesforce CRM, Agentforce AI, workflow automation, and cloud management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section reveal" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">My primary tools and technical expertise areas, categorized by technology layers.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Machine Learning & Analytics -->
+          <div class="glass-panel spotlight-card skills-category">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">AI & Machine Learning</h3>
+            </div>
+            
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Classification & Regression</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Preprocessing & EDA</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Feature Engineering</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="80%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+              <span class="skill-chip">Random Forest</span>
+              <span class="skill-chip">XGBoost</span>
+              <span class="skill-chip">SMOTE</span>
+              <span class="skill-chip">Model Evaluation</span>
+            </div>
+          </div>
+
+          <!-- Web Development & Core -->
+          <div class="glass-panel spotlight-card skills-category">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Languages & Core CS</h3>
+            </div>
+            
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python Language</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java (Core CS & OOPs)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Web Development (React/REST)</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="75%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+              <span class="skill-chip">R Language</span>
+              <span class="skill-chip">Spring Boot</span>
+              <span class="skill-chip">DSA</span>
+              <span class="skill-chip">DBMS / SQL</span>
+              <span class="skill-chip">OOPs Basics</span>
+            </div>
+          </div>
+
+          <!-- Tools & Ecosystem -->
+          <div class="glass-panel spotlight-card skills-category">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Ecosystem & Platforms</h3>
+            </div>
+            
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Salesforce & Agentforce</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Analytics Tools (Tableau)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Version Control (Git)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" data-percentage="85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+              <span class="skill-chip">Jupyter Notebooks</span>
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">ServiceNow Adm.</span>
+              <span class="skill-chip">Smart Bridge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section reveal" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic Timeline</h2>
+          <p class="section-desc">My educational journey showing details, timelines, and academic performance.</p>
+        </div>
+
+        <div class="timeline-section-grid">
+          <!-- Education timeline -->
+          <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-item-header">
+                <h3 class="timeline-role">B.Tech Computer Science and Engineering (Data Science)</h3>
+                <span class="timeline-duration">2023 – 2027</span>
+              </div>
+              <div class="timeline-company">Anurag University, Hyderabad</div>
+              <div style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+                <p>Gaining exhaustive foundations in advanced algorithms, databases, machine learning architectures, and analytics. Maintaining a competitive academic profile.</p>
+                <div style="margin-top: 0.75rem; font-weight: 600; color: var(--accent);">Current CGPA: 8.62 / 10</div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-item-header">
+                <h3 class="timeline-role">Intermediate in MPC (Maths, Physics, Chemistry)</h3>
+                <span class="timeline-duration">2021 – 2023</span>
+              </div>
+              <div class="timeline-company">Sri Chaitanya Junior College</div>
+              <div style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+                <p>Completed pre-university education with deep analytical exposure in mathematics, mechanics, physics, and inorganic sciences.</p>
+                <div style="margin-top: 0.75rem; font-weight: 600; color: var(--accent);">Percentage: 84.7%</div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-item-header">
+                <h3 class="timeline-role">Board of Secondary Education</h3>
+                <span class="timeline-duration">2020 – 2021</span>
+              </div>
+              <div class="timeline-company">NTR Model School</div>
+              <div style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+                <p>Completed standard high school curriculum with notable performance in mathematics and sciences.</p>
+                <div style="margin-top: 0.75rem; font-weight: 600; color: var(--accent);">Percentage: 83%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Achievements visual panel -->
+          <div class="floating float-slow float-delayed-1" style="display: flex; justify-content: center; align-items: center;">
+            <div class="glass-panel spotlight-card" style="padding: 2.5rem; width: 100%; display: flex; flex-direction: column; gap: 1.5rem;">
+              <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-primary);">Academic Focus</h3>
+              
+              <ul style="color: var(--text-secondary); font-size: 0.95rem; display: flex; flex-direction: column; gap: 1rem; list-style-type: none; padding-left: 0;">
+                <li style="display: flex; gap: 0.75rem;">
+                  <span style="color: var(--accent); font-weight: bold;">✓</span>
+                  Structured algorithms & complex problem solving in Python.
+                </li>
+                <li style="display: flex; gap: 0.75rem;">
+                  <span style="color: var(--accent); font-weight: bold;">✓</span>
+                  Rigorous statistics for data sampling and machine learning pipelines.
+                </li>
+                <li style="display: flex; gap: 0.75rem;">
+                  <span style="color: var(--accent); font-weight: bold;">✓</span>
+                  Developing backend REST servers and standard database management layouts.
+                </li>
+                <li style="display: flex; gap: 0.75rem;">
+                  <span style="color: var(--accent); font-weight: bold;">✓</span>
+                  Enterprise AI models, prompt tuning, and agent-level integrations.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section reveal" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Professional History</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc">My professional industry trainee tracks and corporate projects.</p>
+        </div>
+
+        <div class="timeline-section-grid">
+          <!-- Interactive Visual on left -->
+          <div class="floating float-slow" style="display: flex; justify-content: center; align-items: center;">
+            <div class="glass-panel spotlight-card" style="padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(34, 211, 238, 0.1); color: var(--accent); display: flex; align-items: center; justify-content: center;">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3 style="font-size: 1.5rem;">Salesforce Ecosystem</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                Trained in enterprise workflows and low-code AI. Gained hands-on skills in deploying functional Salesforce Agentforce orbs, process automations, and cloud architecture components.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline on right -->
+          <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-item-header">
+                <h3 class="timeline-role">Salesforce AI Agent Developer Trainee</h3>
+                <span class="timeline-duration">July 2025 – Oct 2025</span>
+              </div>
+              <div class="timeline-company">Smart Bridge (Skill Wallet – Last Mile Program)</div>
+              <ul class="timeline-desc-list" style="margin-top: 1rem;">
+                <li>Completed rigorous hands-on training focusing on AI agent construction, low-code automations, and CRM optimization using modern cloud engines.</li>
+                <li>Designed corporate Salesforce-based CRM modules responding to simulated commercial test cases, improving transaction tracking and user interactive efficiency.</li>
+                <li>Applied practical Salesforce flows, fields, custom objects, and prompt-based trigger tools in Salesforce Sandbox environments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section reveal" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Premium Projects</h2>
+          <p class="section-desc">Explore high-quality systems I've built using Machine Learning, REST APIs, React, and Spring Boot.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="glass-panel spotlight-card project-card">
+            <div class="project-image-container">
+              <div class="project-card-visual">
+                <!-- SVG Visual vector representing API & Queue -->
+                <svg class="visual-art" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="35" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5, 3" />
+                  <rect x="25" y="30" width="50" height="8" rx="2" fill="var(--primary)" opacity="0.6"/>
+                  <rect x="25" y="45" width="50" height="8" rx="2" fill="var(--accent)" opacity="0.7"/>
+                  <rect x="25" y="60" width="50" height="8" rx="2" fill="var(--accent-light)" opacity="0.8"/>
+                  <line x1="30" y1="50" x2="70" y2="50" stroke="#fff" stroke-width="3"/>
+                </svg>
+              </div>
+              <div class="project-image-overlay"></div>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Healthcare Queue Management System</h3>
+              <p class="project-desc">
+                An interactive patient queue monitoring and routing network designed to optimize hospital administrative speed and reduce crowd congestion.
+              </p>
+              
+              <ul class="project-bullet-points">
+                <li>Developed robust and high-performing REST APIs using <strong>Spring Boot</strong>, significantly boosting server response speeds.</li>
+                <li>Built a sleek <strong>React Dashboard</strong> showing queue levels, waiting times, and routing lines in real time.</li>
+                <li>Integrated a high-performance <strong>H2 Database</strong> with relational schema and tested all endpoints thoroughly using Postman.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">REST APIs</span>
+                <span class="project-tag">H2 Database</span>
+                <span class="project-tag">Postman</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Poojita40" target="_blank" class="project-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="glass-panel spotlight-card project-card">
+            <div class="project-image-container">
+              <div class="project-card-visual">
+                <!-- SVG Visual vector representing ML Churn Prediction -->
+                <svg class="visual-art" viewBox="0 0 100 100">
+                  <rect x="20" y="20" width="60" height="60" rx="8" fill="none" stroke="var(--accent-light)" stroke-width="2"/>
+                  <circle cx="35" cy="40" r="6" fill="var(--primary)"/>
+                  <circle cx="65" cy="40" r="6" fill="var(--accent)"/>
+                  <path d="M35 65 Q 50 50 65 65" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                  <line x1="50" y1="20" x2="50" y2="80" stroke="var(--border-color)" stroke-width="1" stroke-dasharray="4, 4"/>
+                </svg>
+              </div>
+              <div class="project-image-overlay"></div>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Customer Churn Prediction System</h3>
+              <p class="project-desc">
+                An advanced binary classification engine designed to forecast user churn rates using underlying subscription data patterns.
+              </p>
+              
+              <ul class="project-bullet-points">
+                <li>Built complex ML classifiers utilizing <strong>Random Forest</strong> and <strong>XGBoost</strong> algorithms.</li>
+                <li>Conducted thorough data preprocessing, extensive <strong>exploratory analytics (EDA)</strong>, and solved class imbalance using <strong>SMOTE balancing</strong>.</li>
+                <li>Achieved outstanding performance scores, securing <strong>84% cross-validation accuracy</strong> and <strong>78% test set accuracy</strong>.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Scikit-Learn</span>
+                <span class="project-tag">XGBoost</span>
+                <span class="project-tag">SMOTE</span>
+                <span class="project-tag">Pandas</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Poojita40" target="_blank" class="project-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section reveal" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-desc">Professional qualifications and certificates awarded by leading technology ecosystems.</p>
+        </div>
+
+        <div class="certifications-carousel">
+          <!-- Cert 1 -->
+          <div class="glass-panel spotlight-card cert-card">
+            <div class="cert-badge">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="cert-name">Agentforce Specialist Certification</h3>
+            <span class="cert-issuer">Salesforce Academy</span>
+            <div class="cert-meta">
+              <span>Enterprise AI</span>
+              <span>2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-panel spotlight-card cert-card">
+            <div class="cert-badge">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="cert-name">Machine Learning Certification</h3>
+            <span class="cert-issuer">NPTEL Online Curriculum</span>
+            <div class="cert-meta">
+              <span>ML Algorithms</span>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-panel spotlight-card cert-card">
+            <div class="cert-badge">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h3 class="cert-name">Data Analytics Essentials</h3>
+            <span class="cert-issuer">Cisco Networking Academy</span>
+            <div class="cert-meta">
+              <span>Data Systems</span>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glass-panel spotlight-card cert-card">
+            <div class="cert-badge">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="cert-name">Java Fundamentals</h3>
+            <span class="cert-issuer">Oracle Academy</span>
+            <div class="cert-meta">
+              <span>Java Core / OOPs</span>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="glass-panel spotlight-card cert-card">
+            <div class="cert-badge">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <cloud-lightning style="width: 24px; height: 24px;"></cloud-lightning>
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="cert-name">Data Analytics Cloud Badge</h3>
+            <span class="cert-issuer">Google Cloud Platform</span>
+            <div class="cert-meta">
+              <span>Cloud SQL / BigQuery</span>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="glass-panel spotlight-card cert-card">
+            <div class="cert-badge">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="cert-name">Python Essentials</h3>
+            <span class="cert-issuer">Cisco Networking Academy</span>
+            <div class="cert-meta">
+              <span>Python / scripting</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIPS SECTION -->
+    <section class="section reveal" id="internships">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Workplace Practice</span>
+          <h2 class="section-title">Virtual Internships</h2>
+          <p class="section-desc">Gained comprehensive workplace exposure and domain training from leading industry modules.</p>
+        </div>
+
+        <div class="internships-grid">
+          <!-- Internship 1 -->
+          <div class="glass-panel spotlight-card internship-card">
+            <div class="internship-header">
+              <div class="internship-logo">DA</div>
+              <div class="internship-meta">
+                <h3>Data Analytics Process Automation</h3>
+                <p>EduSkills Virtual Internship</p>
+              </div>
+            </div>
+            <p class="internship-desc">
+              Extensive focus on modern analytical flows, cleaning methods, ETL scripting, and data-driven process modeling.
+            </p>
+          </div>
+
+          <!-- Internship 2 -->
+          <div class="glass-panel spotlight-card internship-card">
+            <div class="internship-header">
+              <div class="internship-logo">AD</div>
+              <div class="internship-meta">
+                <h3>Android Developer Internship</h3>
+                <p>EduSkills Virtual Internship</p>
+              </div>
+            </div>
+            <p class="internship-desc">
+              Training in building mobile applications, interface handling, logic controllers, and standard layout hierarchies.
+            </p>
+          </div>
+
+          <!-- Internship 3 -->
+          <div class="glass-panel spotlight-card internship-card">
+            <div class="internship-header">
+              <div class="internship-logo">ES</div>
+              <div class="internship-meta">
+                <h3>Employability Skills Trainee</h3>
+                <p>EduSkills Virtual Program</p>
+              </div>
+            </div>
+            <p class="internship-desc">
+              Professional grooming covering collaborative management, project coordination, communication standards, and team operations.
+            </p>
+          </div>
+
+          <!-- Internship 4 -->
+          <div class="glass-panel spotlight-card internship-card">
+            <div class="internship-header">
+              <div class="internship-logo">SN</div>
+              <div class="internship-meta">
+                <h3>ServiceNow Administration Fundamentals</h3>
+                <p>SmartBridge Virtual Program (Xanadu Edition)</p>
+              </div>
+            </div>
+            <p class="internship-desc">
+              Focus on ServiceNow ITSM architectures, workflow structures, database tables, scripting basics, and portal controls.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANDATORY RESUME SECTION -->
+    <section class="section reveal" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Resume Hub</span>
+          <h2 class="section-title">Resume Integration</h2>
+          <p class="section-desc">Download, inspect or preview my complete credential files directly inside the page.</p>
+        </div>
+
+        <div class="resume-layout">
+          <!-- Highlights column -->
+          <div class="resume-highlights-stack">
+            <div class="glass-panel spotlight-card resume-highlight-item">
+              <div class="resume-highlight-icon-box">
+                <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="resume-highlight-text">
+                <h4>Education Highlights</h4>
+                <p>Anurag University B.Tech Data Science (CGPA: 8.62), Sri Chaitanya MPC (84.7%).</p>
+              </div>
+            </div>
+
+            <div class="glass-panel spotlight-card resume-highlight-item">
+              <div class="resume-highlight-icon-box">
+                <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                </svg>
+              </div>
+              <div class="resume-highlight-text">
+                <h4>Skill Overview</h4>
+                <p>Python, Java, Spring Boot, React, XGBoost & Machine Learning evaluation.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel spotlight-card resume-highlight-item">
+              <div class="resume-highlight-icon-box">
+                <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="resume-highlight-text">
+                <h4>Core Experience</h4>
+                <p>Salesforce AI Agent Developer Trainee — smart process models sandbox automation.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel spotlight-card resume-highlight-item">
+              <div class="resume-highlight-icon-box">
+                <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 22 22 22 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="resume-highlight-text">
+                <h4>Projects Track</h4>
+                <p>Healthcare Queue System (Spring Boot + React) and Churn Prediction (XGBoost 84% CV).</p>
+              </div>
+            </div>
+
+            <div class="glass-panel spotlight-card resume-highlight-item">
+              <div class="resume-highlight-icon-box">
+                <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div class="resume-highlight-text">
+                <h4>Certifications</h4>
+                <p>Salesforce Agentforce, NPTEL Machine Learning, Cisco Data Analytics.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded PDF Viewer column -->
+          <div class="glass-panel spotlight-card resume-viewer-container">
+            <div class="resume-viewer-header">
+              <div class="resume-viewer-title">
+                <svg style="width: 18px; height: 18px; color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                poojita_resume.pdf
+              </div>
+              
+              <div class="resume-viewer-actions">
+                <a href="poojita_resume.pdf" download class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;" id="btn-resume-viewer-download">
+                  Download
+                </a>
+                
+                <button class="btn btn-secondary open-resume-modal-btn" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;" id="btn-resume-viewer-modal">
+                  View Fullscreen
+                </button>
+              </div>
+            </div>
+
+            <!-- Responsive iframe for resume PDF -->
+            <iframe class="resume-iframe" src="poojita_resume.pdf" title="Lakkakula Poojita Resume PDF" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section reveal" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-desc">Let's discuss internship opportunities, placement roles, or machine learning projects.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-stack">
+            <div class="glass-panel spotlight-card contact-card">
+              <div class="contact-icon-box">
+                <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <h4>Email Address</h4>
+                <a href="mailto:poojitalakkakula09@gmail.com">poojitalakkakula09@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="glass-panel spotlight-card contact-card">
+              <div class="contact-icon-box">
+                <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <h4>Phone Number</h4>
+                <p>+91 6305910456</p>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="glass-panel spotlight-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+              <h4 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Social Networks</h4>
+              
+              <div class="contact-socials-wrapper">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/poojitalakkakula" target="_blank" class="contact-social-btn" aria-label="LinkedIn Profile">
+                  <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/Poojita40" target="_blank" class="contact-social-btn" aria-label="GitHub Profile">
+                  <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-panel spotlight-card contact-form-panel">
+            <form id="contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your Name</label>
+                  <input class="form-input" type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Email Address</label>
+                  <input class="form-input" type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-subject">Subject</label>
+                <input class="form-input" type="text" id="form-subject" placeholder="Opportunity, Project Proposal..." required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Message</label>
+                <textarea class="form-textarea" id="form-message" placeholder="Hi Poojita, I viewed your portfolio and would like to..." required></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit" style="width: 100%;" id="btn-submit-contact">
+                Send Secure Message
+                <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#" class="logo" style="font-size: 1.25rem;">
+        L. Poojita<span class="logo-dot"></span>
+      </a>
+      <p style="color: var(--text-secondary); max-width: 400px; font-size: 0.9rem;">
+        Transforming data patterns into intelligent business solutions through software development and machine learning.
+      </p>
+      <div class="footer-copyright">
+        © 2026 Lakkakula Poojita. All Rights Reserved. Built with Apple & Vercel Design aesthetics.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FULLSCREEN RESUME PREVIEW MODAL -->
+  <div class="modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="glass-panel modal-content-wrapper">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Lakkakula Poojita — Resume Preview</h3>
+        <button class="modal-close-btn" id="modal-close" aria-label="Close Preview Modal">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+          </svg>
+        </button>
+      </div>
+      <iframe class="modal-iframe" src="poojita_resume.pdf" title="Resume Fullscreen Reader"></iframe>
+    </div>
+  </div>
+
+  <!-- Javascript Bundle -->
+  <script src="app.js"></script>
+</body>
+</html>
