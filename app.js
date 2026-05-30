@@ -275,7 +275,7 @@ function initPdfModal() {
    6. CONTACT FORM HANDLING (EmailJS Integration)
    ========================================================================== */
 
-const EMAILJS_SERVICE_ID  = 'service_hat0uim';
+const EMAILJS_SERVICE_ID  = 'service_tdi5kzn';
 const EMAILJS_TEMPLATE_ID = 'template_a4930va';
 const EMAILJS_PUBLIC_KEY  = 'ky701ybUTU3sdNMMt';
 
