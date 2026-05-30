@@ -275,6 +275,17 @@ function initPdfModal() {
    6. CONTACT FORM HANDLING (EmailJS Integration)
    ========================================================================== */
 
+<<<<<<< HEAD
+=======
+// -----------------------------------------------------------------------
+// ✏️  FILL IN YOUR EMAILJS CREDENTIALS BELOW:
+//     1. Sign up at https://www.emailjs.com (free plan is enough)
+//     2. Create an Email Service  → copy its Service ID
+//     3. Create an Email Template → copy its Template ID
+//        Map template variables:  {{from_name}}, {{from_email}}, {{subject}}, {{message}}
+//     4. Go to Account → API Keys  → copy your Public Key
+// -----------------------------------------------------------------------
+>>>>>>> 1efb50563cc20cc046ff2947ab9afbd48a9cb40d
 const EMAILJS_SERVICE_ID  = 'service_hat0uim';
 const EMAILJS_TEMPLATE_ID = 'template_a4930va';
 const EMAILJS_PUBLIC_KEY  = 'ky701ybUTU3sdNMMt';
@@ -285,9 +296,21 @@ function initContactForm() {
 
   if (!form || !statusDiv) return;
 
+<<<<<<< HEAD
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+=======
+  // Initialise EmailJS with your public key (v4 syntax)
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Get form inputs
+>>>>>>> 1efb50563cc20cc046ff2947ab9afbd48a9cb40d
     const name    = document.getElementById('form-name').value.trim();
     const email   = document.getElementById('form-email').value.trim();
     const subject = document.getElementById('form-subject').value.trim();
@@ -300,18 +323,29 @@ function initContactForm() {
       return;
     }
 
+<<<<<<< HEAD
     // Loading state
+=======
+    // Show loading state on button
+>>>>>>> 1efb50563cc20cc046ff2947ab9afbd48a9cb40d
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
+<<<<<<< HEAD
       <svg style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
         <path d="M12 2C6.477 2 2 6.477 2 12" stroke-linecap="round"></path>
+=======
+      <svg class="animate-spin" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10" stroke-linecap="round"></path>
+>>>>>>> 1efb50563cc20cc046ff2947ab9afbd48a9cb40d
       </svg>
       Sending Message...
     `;
 
+<<<<<<< HEAD
     try {
       // Send via EmailJS v4 — publicKey passed directly to send()
       const response = await emailjs.send(
@@ -330,12 +364,37 @@ function initContactForm() {
 
       // ✅ Success
       statusDiv.textContent = `Thank you, ${name}! Your message has been sent. I'll get back to you shortly!`;
+=======
+    // Template parameters – matched to EmailJS template variables
+    const templateParams = {
+      name:    name,
+      email:   email,
+      title:   subject,
+      message: message,
+    };
+
+    try {
+      if (typeof emailjs === 'undefined') {
+        throw new Error('EmailJS library not loaded. Check your internet connection.');
+      }
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      );
+
+      // ✅ Success
+      statusDiv.textContent = `Thank you, ${name}! Your message has been sent successfully. I will get back to you shortly!`;
+>>>>>>> 1efb50563cc20cc046ff2947ab9afbd48a9cb40d
       statusDiv.className   = 'form-status success';
       statusDiv.style.display = 'block';
       form.reset();
 
     } catch (error) {
       console.error('EmailJS error:', error);
+<<<<<<< HEAD
       // Show the real error so we can debug
       statusDiv.textContent = `Error: ${error.text || error.message || JSON.stringify(error)}`;
       statusDiv.className   = 'form-status error';
@@ -347,6 +406,22 @@ function initContactForm() {
     }
   });
 }
+=======
+      // ❌ Error
+      statusDiv.textContent = 'Oops! Something went wrong. Please try emailing me directly at poojitalakkakula09@gmail.com';
+      statusDiv.className   = 'form-status error';
+      statusDiv.style.display = 'block';
+    } finally {
+      // Restore button
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+
+      // Auto-hide status after 8 seconds
+      setTimeout(() => {
+        statusDiv.style.display = 'none';
+      }, 8000);
+    }
+>>>>>>> 1efb50563cc20cc046ff2947ab9afbd48a9cb40d
   });
 }
 
