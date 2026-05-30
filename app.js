@@ -272,58 +272,102 @@ function initPdfModal() {
 }
 
 /* ==========================================================================
-   6. CONTACT FORM HANDLING
+   6. CONTACT FORM HANDLING (EmailJS Integration)
    ========================================================================== */
+
+// -----------------------------------------------------------------------
+// ✏️  FILL IN YOUR EMAILJS CREDENTIALS BELOW:
+//     1. Sign up at https://www.emailjs.com (free plan is enough)
+//     2. Create an Email Service  → copy its Service ID
+//     3. Create an Email Template → copy its Template ID
+//        Map template variables:  {{from_name}}, {{from_email}}, {{subject}}, {{message}}
+//     4. Go to Account → API Keys  → copy your Public Key
+// -----------------------------------------------------------------------
+const EMAILJS_SERVICE_ID  = 'service_hat0uim';
+const EMAILJS_TEMPLATE_ID = 'template_a4930va';
+const EMAILJS_PUBLIC_KEY  = 'ky701ybUTU3sdNMMt';
+
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const statusDiv = document.querySelector('.form-status');
 
   if (!form || !statusDiv) return;
 
-  form.addEventListener('submit', (e) => {
+  // Initialise EmailJS with your public key (v4 syntax)
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     // Get form inputs
-    const name = document.getElementById('form-name').value.trim();
-    const email = document.getElementById('form-email').value.trim();
+    const name    = document.getElementById('form-name').value.trim();
+    const email   = document.getElementById('form-email').value.trim();
     const subject = document.getElementById('form-subject').value.trim();
     const message = document.getElementById('form-message').value.trim();
 
     if (!name || !email || !subject || !message) {
-      statusDiv.textContent = "Please fill in all fields.";
-      statusDiv.className = "form-status error";
+      statusDiv.textContent = 'Please fill in all fields.';
+      statusDiv.className   = 'form-status error';
+      statusDiv.style.display = 'block';
       return;
     }
 
-    // Elegant loading simulation
+    // Show loading state on button
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
-      <svg class="animate-spin" style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24">
+      <svg class="animate-spin" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
-        <path d="M12 2C6.477 12 2 6.477 2 12s4.477 10 10 10" stroke-linecap="round"></path>
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10" stroke-linecap="round"></path>
       </svg>
       Sending Message...
     `;
 
-    setTimeout(() => {
-      // Show professional success message
+    // Template parameters – matched to EmailJS template variables
+    const templateParams = {
+      name:    name,
+      email:   email,
+      title:   subject,
+      message: message,
+    };
+
+    try {
+      if (typeof emailjs === 'undefined') {
+        throw new Error('EmailJS library not loaded. Check your internet connection.');
+      }
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      );
+
+      // ✅ Success
       statusDiv.textContent = `Thank you, ${name}! Your message has been sent successfully. I will get back to you shortly!`;
-      statusDiv.className = "form-status success";
-      
-      // Reset form
+      statusDiv.className   = 'form-status success';
+      statusDiv.style.display = 'block';
       form.reset();
-      
+
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      // ❌ Error
+      statusDiv.textContent = 'Oops! Something went wrong. Please try emailing me directly at poojitalakkakula09@gmail.com';
+      statusDiv.className   = 'form-status error';
+      statusDiv.style.display = 'block';
+    } finally {
       // Restore button
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalBtnText;
 
-      // Hide success message after 6 seconds
+      // Auto-hide status after 8 seconds
       setTimeout(() => {
         statusDiv.style.display = 'none';
-      }, 6000);
-    }, 1500);
+      }, 8000);
+    }
   });
 }
 
