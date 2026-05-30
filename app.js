@@ -272,58 +272,81 @@ function initPdfModal() {
 }
 
 /* ==========================================================================
-   6. CONTACT FORM HANDLING
+   6. CONTACT FORM HANDLING (EmailJS Integration)
    ========================================================================== */
+
+const EMAILJS_SERVICE_ID  = 'service_hat0uim';
+const EMAILJS_TEMPLATE_ID = 'template_a4930va';
+const EMAILJS_PUBLIC_KEY  = 'ky701ybUTU3sdNMMt';
+
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const statusDiv = document.querySelector('.form-status');
 
   if (!form || !statusDiv) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    // Get form inputs
-    const name = document.getElementById('form-name').value.trim();
-    const email = document.getElementById('form-email').value.trim();
+
+    const name    = document.getElementById('form-name').value.trim();
+    const email   = document.getElementById('form-email').value.trim();
     const subject = document.getElementById('form-subject').value.trim();
     const message = document.getElementById('form-message').value.trim();
 
     if (!name || !email || !subject || !message) {
-      statusDiv.textContent = "Please fill in all fields.";
-      statusDiv.className = "form-status error";
+      statusDiv.textContent = 'Please fill in all fields.';
+      statusDiv.className   = 'form-status error';
+      statusDiv.style.display = 'block';
       return;
     }
 
-    // Elegant loading simulation
+    // Loading state
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
-      <svg class="animate-spin" style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24">
+      <svg style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
-        <path d="M12 2C6.477 12 2 6.477 2 12s4.477 10 10 10" stroke-linecap="round"></path>
+        <path d="M12 2C6.477 2 2 6.477 2 12" stroke-linecap="round"></path>
       </svg>
       Sending Message...
     `;
 
-    setTimeout(() => {
-      // Show professional success message
-      statusDiv.textContent = `Thank you, ${name}! Your message has been sent successfully. I will get back to you shortly!`;
-      statusDiv.className = "form-status success";
-      
-      // Reset form
+    try {
+      // Send via EmailJS v4 — publicKey passed directly to send()
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name:    name,
+          email:   email,
+          title:   subject,
+          message: message,
+        },
+        EMAILJS_PUBLIC_KEY   // ← v4: pass the public key string directly (not an object)
+      );
+
+      console.log('EmailJS success:', response);
+
+      // ✅ Success
+      statusDiv.textContent = `Thank you, ${name}! Your message has been sent. I'll get back to you shortly!`;
+      statusDiv.className   = 'form-status success';
+      statusDiv.style.display = 'block';
       form.reset();
-      
-      // Restore button
+
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      // Show the real error so we can debug
+      statusDiv.textContent = `Error: ${error.text || error.message || JSON.stringify(error)}`;
+      statusDiv.className   = 'form-status error';
+      statusDiv.style.display = 'block';
+    } finally {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalBtnText;
-
-      // Hide success message after 6 seconds
-      setTimeout(() => {
-        statusDiv.style.display = 'none';
-      }, 6000);
-    }, 1500);
+      setTimeout(() => { statusDiv.style.display = 'none'; }, 10000);
+    }
+  });
+}
   });
 }
 
