@@ -1,6 +1,9 @@
 // --- DYNAMIC INTERACTIVE BEHAVIORS ---
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize EmailJS with public key (required for v4)
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+
   // Initialize all elements and handlers
   initParticles();
   initMouseGlow();
@@ -313,7 +316,7 @@ function initContactForm() {
     `;
 
     try {
-      // EmailJS v4 — publicKey passed as plain string (4th argument)
+      // EmailJS v4 — send with options object
       const response = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
@@ -323,7 +326,9 @@ function initContactForm() {
           title:   subject,
           message: message,
         },
-        EMAILJS_PUBLIC_KEY
+        {
+          publicKey: EMAILJS_PUBLIC_KEY,
+        }
       );
 
       console.log('EmailJS success:', response);
